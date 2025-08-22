@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-size: 10px;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+#main-layout{
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-areas:
+  "n n"
+  "s c" 
+  "s p"
+  ;
+  grid-template-columns: 1fr 6fr;
+  grid-template-rows: 1fr 8fr 1fr;
+}
+#nav {
+  grid-area: n;
+  background-color: lightcoral;
+}
+#content{
+  grid-area: c;
+  background-color: lightblue;
+}
+#player{
+  grid-area: p;
+  background-color: lightgreen;
+}
+#side{
+  grid-area: s;
+  display: grid;
+  grid-template:
+  "smc"
+  "ssc"
+  "crg"
+  ;
+  grid-template-rows: 3fr 3fr 1fr;
+  background-color: lightsalmon;
+}
+#sidebar-main-content{
+  grid-area: smc;
+}
+#sidebar-side-content{
+  grid-area: ssc;
+}
+#create-goal{
+  grid-area: crg;
+}
+#content{
+  display: grid;
+  grid-template-areas:
+  "cog cos"
+  "cop cop";
+}
+#content-goal {
+  grid-area: cog;
+}
+#content-schedule {
+  grid-area: cos;
+}
+#content-progress {
+  grid-area: cop;
+}
+#content-goal-card{
+  background-color: lightyellow;
+}
