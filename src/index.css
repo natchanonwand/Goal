@@ -30,6 +30,8 @@ body {
 #content{
   grid-area: c;
   background-color: lightblue;
+  gap: 1rem;
+  padding: 1rem;
 }
 #player{
   grid-area: p;
