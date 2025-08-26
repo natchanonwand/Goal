@@ -1,6 +1,11 @@
 function ProgressBar() {
   return (
-    <div>ProgressBar</div>
+    <section className="w-full h-full">
+      <div className="card-header">
+        <h1>Progress Overview</h1>
+      </div>
+      
+    </section>
   )
 }
 

@@ -17,8 +17,8 @@ body {
   display: grid;
   grid-template-areas:
   "n n"
-  "s c" 
-  "s p"
+  "c c" 
+  "p p"
   ;
   grid-template-columns: 1fr 6fr;
   grid-template-rows: 1fr 8fr 1fr;
@@ -38,15 +38,18 @@ body {
   background-color: lightgreen;
 }
 #side{
-  grid-area: s;
   display: grid;
   grid-template:
+  "slc"
   "smc"
   "ssc"
   "crg"
   ;
-  grid-template-rows: 3fr 3fr 1fr;
+  grid-template-rows: 1fr 3fr 5fr 1fr;
   background-color: lightsalmon;
+}
+#sidebar-logo-content{
+  grid-area: slc;
 }
 #sidebar-main-content{
   grid-area: smc;
@@ -56,6 +59,7 @@ body {
 }
 #create-goal{
   grid-area: crg;
+  
 }
 #content{
   display: grid;
@@ -71,7 +75,14 @@ body {
 }
 #content-progress {
   grid-area: cop;
+  display: flex;
 }
 #content-goal-card{
   background-color: lightyellow;
+}
+
+
+.card-header {
+  display: flex;
+  border-bottom: 1px solid lightgray;
 }

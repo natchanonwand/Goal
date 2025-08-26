@@ -3,7 +3,7 @@ import Nav from "../components/Nav/Nav"
 import Content from "../components/Content/Content"
 import Player from "../components/Player/Player"
 
-function MainLayout() {
+function GoalsLayout() {
   return (
     <section id='main-layout'>
         <Nav></Nav>
@@ -14,4 +14,4 @@ function MainLayout() {
   )
 }
 
-export default MainLayout
+export default GoalsLayout

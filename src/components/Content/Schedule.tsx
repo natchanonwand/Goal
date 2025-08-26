@@ -1,6 +1,6 @@
 function Schedule() {
   return (
-    <div>schedule</div>
+    <div className="w-full h-full">schedule</div>
   )
 }
 

@@ -17,6 +17,12 @@ dependencies:
   react-router-dom:
     specifier: ^7.8.2
     version: 7.8.2(react-dom@19.1.1)(react@19.1.1)
+  react-type-animation:
+    specifier: ^3.2.0
+    version: 3.2.0(prop-types@15.8.1)(react-dom@19.1.1)(react@19.1.1)
+  react-typed:
+    specifier: ^2.0.12
+    version: 2.0.12(react@19.1.1)
 
 devDependencies:
   '@eslint/js':
@@ -1799,7 +1805,6 @@ packages:
 
   /js-tokens@4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
-    dev: true
 
   /js-yaml@4.1.0:
     resolution: {integrity: sha512-wpxZs9NoxZaJESJGIZTyDEaYpl0FKSA+FB9aJiyemKhMwkxQg63h4T1KJgUGHpTqPDNRcmmYLugrRjJlBtWvRA==}
@@ -1954,6 +1959,13 @@ packages:
     resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==}
     dev: true
 
+  /loose-envify@1.4.0:
+    resolution: {integrity: sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==}
+    hasBin: true
+    dependencies:
+      js-tokens: 4.0.0
+    dev: false
+
   /lru-cache@5.1.1:
     resolution: {integrity: sha512-KpNARQA3Iwv+jTA0utUVVbrh+Jlrr1Fv0e56GGzAFOXN7dk/FviaDW8LHmK52DlcH4WP2n6gI8vN1aesBFgo9w==}
     dependencies:
@@ -2037,6 +2049,11 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
+  /object-assign@4.1.1:
+    resolution: {integrity: sha512-rJgTQnkUnH1sFw8yT6VSU3zD3sWmu6sZhIseY8VX+GRu3P6F7Fu+JNDoXfklElbLJSnc3FUQHVe4cU5hj+BcUg==}
+    engines: {node: '>=0.10.0'}
+    dev: false
+
   /optionator@0.9.4:
     resolution: {integrity: sha512-6IpQ7mKUxRcZNLIObR0hz7lxsapSSIYNZJwXPGeF0mTVqGKFIXj1DQcMoT22S3ROcLyY/rz0PWaWZ9ayWmad9g==}
     engines: {node: '>= 0.8.0'}
@@ -2109,6 +2126,14 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: true
 
+  /prop-types@15.8.1:
+    resolution: {integrity: sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==}
+    dependencies:
+      loose-envify: 1.4.0
+      object-assign: 4.1.1
+      react-is: 16.13.1
+    dev: false
+
   /punycode@2.3.1:
     resolution: {integrity: sha512-vYt7UD1U9Wg6138shLtLOvdAu+8DsC/ilFtEVHcH+wydcSpNE20AfSOduf6MkRFahL5FY7X1oU7nKVZFtfq8Fg==}
     engines: {node: '>=6'}
@@ -2125,6 +2150,10 @@ packages:
     dependencies:
       react: 19.1.1
       scheduler: 0.26.0
+    dev: false
+
+  /react-is@16.13.1:
+    resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
     dev: false
 
   /react-refresh@0.17.0:
@@ -2158,6 +2187,27 @@ packages:
       react: 19.1.1
       react-dom: 19.1.1(react@19.1.1)
       set-cookie-parser: 2.7.1
+    dev: false
+
+  /react-type-animation@3.2.0(prop-types@15.8.1)(react-dom@19.1.1)(react@19.1.1):
+    resolution: {integrity: sha512-WXTe0i3rRNKjmggPvT5ntye1QBt0ATGbijeW6V3cQe2W0jaMABXXlPPEdtofnS9tM7wSRHchEvI9SUw+0kUohw==}
+    peerDependencies:
+      prop-types: ^15.5.4
+      react: '>= 15.0.0'
+      react-dom: '>= 15.0.0'
+    dependencies:
+      prop-types: 15.8.1
+      react: 19.1.1
+      react-dom: 19.1.1(react@19.1.1)
+    dev: false
+
+  /react-typed@2.0.12(react@19.1.1):
+    resolution: {integrity: sha512-sn59lrb4NKgvQLDGBRWM4wRNEz5Fp37F0BrLA2cKUmDqPSyQJOOiFigz+6wJof0o99QoE16nVCa3B3ID34ejsg==}
+    peerDependencies:
+      react: '>16.8.0'
+    dependencies:
+      react: 19.1.1
+      typed.js: 2.1.0
     dev: false
 
   /react@19.1.1:
@@ -2304,6 +2354,10 @@ packages:
     dependencies:
       prelude-ls: 1.2.1
     dev: true
+
+  /typed.js@2.1.0:
+    resolution: {integrity: sha512-bDuXEf7YcaKN4g08NMTUM6G90XU25CK3bh6U0THC/Mod/QPKlEt9g/EjvbYB8x2Qwr2p6J6I3NrsoYaVnY6wsQ==}
+    dev: false
 
   /typescript-eslint@8.40.0(eslint@9.34.0)(typescript@5.8.3):
     resolution: {integrity: sha512-Xvd2l+ZmFDPEt4oj1QEXzA4A2uUK6opvKu3eGN9aGjB8au02lIVcLyi375w94hHyejTOmzIU77L8ol2sRg9n7Q==}
