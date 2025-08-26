@@ -46,6 +46,8 @@ body {
   "crg"
   ;
   grid-template-rows: 1fr 3fr 5fr 1fr;
+  width: 8rem;
+  justify-content: center;
   background-color: lightsalmon;
 }
 #sidebar-logo-content{
